@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numprimario = prompt("Digite o primeiro número");
+        numprimario = parseInt(numprimario);
+
+        var sinal = prompt("Digite o sinal da operação");
+        while(sinal != '-' && sinal != '+' && sinal != '/' && sinal != '*'){
+        console.log("Digite corretamente o sinal da operação");    
+        var sinal = prompt("Digite o sinal da operação");
+        }
+        var numsecundario = prompt("Digite agora o segundo número");
+        numsecundario = parseInt(numsecundario);
+        
+    
+
+            resultadofinal = parseInt(resultadofinal);
+            resultadofinal = 0;
+
+        if(sinal == '-'){
+        var resultadofinal = numprimario - numsecundario;
+        }
+
+        if(sinal == '+'){
+        var resultadofinal = numprimario + numsecundario;
+        }
+
+        if(sinal == '*'){
+        var resultadofinal = numprimario * numsecundario;
+        }
+
+        if(sinal == '/'){
+        var resultadofinal = numprimario / numsecundario;
+        }
+
+        alert("O resultado da operação é: "+ resultadofinal);
+    
+    </script>
+</body>
+</html>
